@@ -137,5 +137,6 @@ public class jogo {
             System.out.println("Você decidiu ficar no hospital por medo, depois de um tempo algumas pessoas "+
             "chegaram e lhe mataram sem explicações. FINAL 1!");
         }
+        scanner.close();
     }
 }
