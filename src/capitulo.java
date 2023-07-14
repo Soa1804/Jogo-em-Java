@@ -21,7 +21,7 @@ public class capitulo {
         personagem.GanhaPct(pctSucesso1);
         personagem.PerdePct(pctSucesso2);
         if(escolhas != null){
-            System.out.println("as esolhas são: ");
+            System.out.println("as escolhas são: ");
             for(String escolha: escolhas){
                 System.out.println(escolha);
             }
@@ -33,15 +33,14 @@ public class capitulo {
         boolean escolhaInvalida = true;
         while (escolhaInvalida) {
             String resposta = scan.nextLine();
-            for (int i = 0; i < this.escolhas.length; i++) {
-                if (resposta.equalsIgnoreCase(this.escolhas[i])) {
-                    resultado = i;
-                    escolhaInvalida = false;
-                } else {
-                    System.out.println("você não digitou uma opção valida! digite novamente.");
+            for (int i = 0; i < escolhas.length; i++) {
+                if (resposta.equalsIgnoreCase(escolhas[i])) {
+                     escolhaInvalida = false;
+                     return i;
                 }
-            }
-        }
+                }
+            } System.out.println("você não digitou uma opção valida! digite novamente.");
         return resultado;
     }
 }
+//modifiquei a parte do if e retirei o else, e coloquei o return de i dentro di if.
