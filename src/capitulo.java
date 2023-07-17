@@ -42,7 +42,7 @@ class capitulo {
                     return;
                 }
             }
-            System.out.println("Você não digitou uma opção válida! Digite novamente.");
+            System.out.println("Você não digitou uma opção inválida! Digite novamente.");
         }
     }
 

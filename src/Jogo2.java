@@ -36,7 +36,8 @@ public class Jogo2 {
 
         capitulo capitulo8J = new capitulo("" + personagemPrincipal.getNome()
                 + " decidiu se aliar a Phillipy e isso fez com que ambos conseguissem bolar"
-                + "um plano melhor para saírem da prisão.", personagemPrincipal, 4, 0);
+                + " um plano melhor para saírem da prisão. E com isso sairam da prisão"
+                , personagemPrincipal, 4, 0);
 
         capitulo capitulo9J = new capitulo("Na noite do dia 29 ao tentar sair sem a ajuda de outra pessoa, " + personagemPrincipal.getNome() + " é pego"
                 + "pelos guardas e é separado dos outros presos.(Final 3)", personagemPrincipal, 0, 6);
