@@ -1,46 +1,53 @@
 import java.util.Scanner;
-public class capitulo {
-    String texto;
-    String escolha1;
-    String escolha2;
-    personagem personagem;
-    int pctSucesso1;
-    int pctSucesso2;
-    String[] escolhas;
-    Scanner scan = new Scanner(System.in);
+class capitulo {
+    private String texto;
+    private personagem personagem;
+    private int pctSucesso1;
+    private int pctSucesso2;
+    private Escolha[] escolhas;
+    private Scanner scan = new Scanner(System.in);
 
-    public capitulo(String texto, String[] escolhas, personagem personagem, int pctSucesso1, int pctSucesso2){
+    public capitulo(String texto, personagem personagem, int pctSucesso1, int pctSucesso2) {
         this.texto = texto;
         this.personagem = personagem;
         this.pctSucesso1 = pctSucesso1;
         this.pctSucesso2 = pctSucesso2;
+    }
+
+    public void setEscolhas(Escolha[] escolhas) {
         this.escolhas = escolhas;
     }
-    public void mostraCap(){
+
+    public void mostrar() {
         System.out.println(this.texto);
-        personagem.GanhaPct(pctSucesso1);
-        personagem.PerdePct(pctSucesso2);
-        if(escolhas != null){
-            System.out.println("as escolhas são: ");
-            for(String escolha: escolhas){
-                System.out.println(escolha);
+        personagem.ganhaPct(pctSucesso1);
+        personagem.perdePct(pctSucesso2);
+        if (escolhas != null) {
+            System.out.println("As escolhas são: ");
+            for (Escolha escolha : escolhas) {
+                System.out.println(escolha.getTexto());
             }
         }
     }
-    
-    int escolha(String[] escolhas) {
-        int resultado = -1;
+
+    public void escolher() {
         boolean escolhaInvalida = true;
         while (escolhaInvalida) {
             String resposta = scan.nextLine();
-            for (int i = 0; i < escolhas.length; i++) {
-                if (resposta.equalsIgnoreCase(escolhas[i])) {
-                     escolhaInvalida = false;
-                     return i;
+            for (Escolha escolha : escolhas) {
+                if (resposta.equalsIgnoreCase(escolha.getTexto())) {
+                    escolhaInvalida = false;
+                    capitulo proximoCapitulo = escolha.getProximo();
+                    proximoCapitulo.executar();
+                    return;
                 }
-                }
-            } System.out.println("você não digitou uma opção valida! digite novamente.");
-        return resultado;
+            }
+            System.out.println("Você não digitou uma opção válida! Digite novamente.");
+        }
+    }
+
+    public void executar() {
+        mostrar();
+        escolher();
     }
 }
-//modifiquei a parte do if e retirei o else, e coloquei o return de i dentro di if.
