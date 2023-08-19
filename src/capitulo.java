@@ -1,24 +1,28 @@
 import java.util.Scanner;
 class capitulo {
+    private String NomeCapitulo;
     private String texto;
     private personagem personagem;
     private int pctSucesso1;
     private int pctSucesso2;
-    private Escolha[] escolhas;
+    Escolha[] escolhas;
     private Scanner scan = new Scanner(System.in);
 
-    public capitulo(String texto, personagem personagem, int pctSucesso1, int pctSucesso2) {
+    public capitulo(String NomeCapitulo,String texto, personagem personagem, int pctSucesso1, int pctSucesso2, Scanner scan) {
+        this.NomeCapitulo = NomeCapitulo;
         this.texto = texto;
         this.personagem = personagem;
         this.pctSucesso1 = pctSucesso1;
         this.pctSucesso2 = pctSucesso2;
-    }
-
-    public void setEscolhas(Escolha[] escolhas) {
         this.escolhas = escolhas;
     }
 
+    //public void Escolhas(Escolha[] escolhas) {
+        //this.escolhas = escolhas;
+    //}
+
     public void mostrar() {
+        System.out.println(this.NomeCapitulo);
         System.out.println(this.texto);
         personagem.ganhaPct(pctSucesso1);
         personagem.perdePct(pctSucesso2);
@@ -49,5 +53,9 @@ class capitulo {
     public void executar() {
         mostrar();
         escolher();
+    }
+    public void adicionarEscolhas( Escolha escolha) 
+    {
+    this.escolhas.add(escolha);
     }
 }
