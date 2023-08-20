@@ -1,4 +1,3 @@
-package rsc;
 public class Personagem {
 
     private String nome;
