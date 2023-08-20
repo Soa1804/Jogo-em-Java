@@ -1,0 +1,192 @@
+CAPITULO
+ID
+Capitulo001
+PERSONAGENS
+Protagonista
+TEXTO
+John 
+é um presidiário da penitenciária de segurança máxima de veridium, onde trabalha na parte de metalúrgica dela,
+ele está preso por roubo ao banco central da cidade Serenópolis junto com alguns parceiros como Kenny,
+porém por um deslize de  John todos acabaram presos. Mas na noite do dia 28 de outubro de 1995,
+John está pensando se ele deve tentar fugir de uma vez por todas ou continuar ali até a sua sentença ser completa.
+O Que você decide fazer?
+VARIACOES
+0
+0
+
+CAPITULO
+ID
+Capitulo002
+PERSONAGENS
+Protagonista
+TEXTO
+Você decide sair e decide colocar seu plano em prática na manhã seguinte.
+Durante a manhã do dia 29, John se encontra no refeitório e isso acaba lhe dando uma ideia,
+ele decide pegar duas colheres para usar uma para fabricar uma chave para sair de sua sela.
+Após passar na mesa onde Kenny estava, esse o atacou, o que John  deve fazer?
+VARIACOES
+2
+0
+
+
+CAPITULO
+ID
+Capitulo003
+PERSONAGENS
+Protagonista
+TEXTO
+John decide apenas cumprir sua sentença, porém já com seus 45 anos e sua sentença sendo de 50 anos,
+John acabou falecendo na prisão.
+VARIACOES
+-10
++20
+
+CAPITULO
+ID
+Capitulo004
+PERSONAGENS
+Protagonista
+TEXTO
+Kenny pega a faca que estava na mão e esfaqueia John até a morte.
+VARIACOES
+-70
++80
+
+CAPITULO
+ID
+Capitulo005
+PERSONAGENS
+Protagonista
+TEXTO
+John resolve sentar bem longe de Kenny, e com isso senta em uma mesa vazia e após isso outro presidiário senta junto dele.
+Phillipy conversa com John e esse o revela que não aguenta mais essa prisão. John conta para Phillipy seu plano?
+VARIACOES
+-10
+-170
+
+CAPITULO
+ID
+Capitulo006
+PERSONAGENS
+Protagonista
+TEXTO
+Phillipy gosta da ideia e propõe ambos se juntarem para saírem da prisão. Após ouvir as ideias de Phillipy,
+John deve decidir se irá se aliar a ele ou não. O que fazer?
+VARIACOES
+-10
+-170
+
+CAPITULO
+ID
+Capitulo007
+PERSONAGENS
+Protagonista
+TEXTO
+John recusa o pedido de Phillipy e fracassa na sua fuga da prisão e é detido e pega mais 50 anos a mais.
+VARIACOES
+-10
+-17
+
+CAPITULO
+ID
+Capitulo008
+PERSONAGENS
+Protagonista
+TEXTO
+John decidiu se aliar a Phillipy e isso fez com que ambos conseguissem bolar um plano melhor para saírem da prisão. 
+E com isso sairam da prisão.
+VARIACOES
+-10
+-17
+
+CAPITULO
+ID
+Capitulo009
+PERSONAGENS
+Protagonista
+TEXTO
+Na noite do dia 29 ao tentar sair sem a ajuda de outra pessoa, John é pego pelos guardas e é separado dos outros presos.
+VARIACOES
+-10
+-17
+
+ESCOLHA
+DE
+Capitulo001
+PARA
+Capitulo002
+TEXTO DIGITADO
+foge
+TEXTO MOSTRADO
+foge
+
+ESCOLHA
+DE
+Capitulo001
+PARA
+Capitulo003
+TEXTO DIGITADO
+fica
+TEXTO MOSTRADO
+fica
+
+ESCOLHA
+DE
+Capitulo002
+PARA
+Capitulo004
+TEXTO DIGITADO
+vai para cima dele
+TEXTO MOSTRADO
+vai para cima dele
+
+ESCOLHA
+DE
+Capitulo002
+PARA
+Capitulo005
+TEXTO DIGITADO
+apenas ignora
+TEXTO MOSTRADO
+apenas ignora
+
+ESCOLHA
+DE
+Capitulo005
+PARA
+Capitulo006
+TEXTO DIGITADO
+conta
+TEXTO MOSTRADO
+conta
+
+ESCOLHA
+DE
+Capitulo005
+PARA
+Capitulo007
+TEXTO DIGITADO
+não conta
+TEXTO MOSTRADO
+não conta
+
+ESCOLHA
+DE
+Capitulo006
+PARA
+Capitulo008
+TEXTO DIGITADO
+alia
+TEXTO MOSTRADO
+se alia
+
+ESCOLHA
+DE
+Capitulo006
+PARA
+Capitulo009
+TEXTO DIGITADO
+recusa
+TEXTO MOSTRADO
+recusa
+
