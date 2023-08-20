@@ -1,35 +1,50 @@
-public class personagem {
+package rsc;
+public class Personagem {
+
     private String nome;
-    private int pctSucesso;
-
-    public personagem(String nome) {
+    private int energia;
+  
+    public Personagem(String nome, int energia) {
+  
+      this.nome = nome;
+      this.energia = energia;
+      }
+  
+      public Personagem(String nome) {
         this.nome = nome;
-        this.pctSucesso = 0;
+        this.energia = 100;
+  
     }
-
+  
+    public void ajustarEnergia(int variacao) {
+      if (variacao != 0) {
+        setEnergia(this.energia + variacao);
+        System.out.println("a energia de " + this.nome + " foi para " + this.energia);
+  
+      }
+    }
+  
+    public void setEnergia(int energia) {
+      this.energia = energia;
+      if (this.energia < 0) {
+         this.energia = 0;
+      }
+  
+    }
+  
+    public int getEnergia() {
+      return this.energia;
+    }
+  
     public String getNome() {
-        return nome;
+      return this.nome;
     }
-
-    public void ganhaPct(int pct) {
-        pctSucesso += pct;
-        if (pct != 0) {
-            if (pctSucesso < 100) {
-                System.out.println(nome + " ganhou " + pct + "% de chance de sucesso!\n" +
-                        "Sua chance de fuga agora é de " + pctSucesso + "%");
-            } else {
-                System.out.println(nome + " ganhou " + pct + "% de chance de sucesso!\n" +
-                        "Sua chance de fuga agora é de " + pctSucesso + "%\n" +
-                        "Conseguiu fugir!");
-            }
-        }
-    }
-
-    public void perdePct(int pct) {
-        pctSucesso -= pct;
-        if (pct != 0) {
-            System.out.println(nome + " perdeu " + pct + "% de chance de sucesso!\n" +
-                    "Sua chance de fuga agora é de " + pctSucesso + "%");
-        }
-    }
-}
+    
+  
+    
+  
+  
+  
+    
+}  
+  
