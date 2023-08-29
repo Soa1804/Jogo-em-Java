@@ -23,8 +23,7 @@ public class Capitulo {
 
   }
 
-  public Capitulo(Map<String, Personagem> personagens, Scanner escaneadorDoConsole, Scanner escaneadorDeArquivo) 
-  {
+  public Capitulo(Map<String, Personagem> personagens, Scanner escaneadorDoConsole, Scanner escaneadorDeArquivo) {
     this.LerCapitulo(personagens, escaneadorDeArquivo);
     this.escaneador = escaneadorDoConsole;
     this.escolhas = new ArrayList<Escolha>();
@@ -62,26 +61,26 @@ public class Capitulo {
     mostrar();
 
     if (escolhas.size() > 0) {
-        int idCapituloEscolhido = escolher();
-        System.out.println();
-        System.out.println(". . .");
-        System.out.println();
-        escolhas.get(idCapituloEscolhido).getProximo().executar();
+      int idCapituloEscolhido = escolher();
+      System.out.println();
+      System.out.println(". . .");
+      System.out.println();
+      escolhas.get(idCapituloEscolhido).getProximo().executar();
     } else {
-        System.out.println("FIM");
+      System.out.println("FIM");
     }
-}
+  }
 
-protected void mostrar() {
+  protected void mostrar() {
     System.out.println(texto);
     personagem1.ajustarEnergia(variacaoEnergiaPersonagem1);
 
     for (int i = 0; i < escolhas.size(); i++) {
-        System.out.println("- " + escolhas.get(i).getTextoMostrado());
+      System.out.println("- " + escolhas.get(i).getTextoMostrado());
     }
 
     System.out.print(">> ");
-}
+  }
 
   public int escolher() {
 

@@ -2,7 +2,3 @@ Protagonista
 Amartia
 100
 
-Antagonista
-Entidade
-150
-

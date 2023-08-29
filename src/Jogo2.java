@@ -11,7 +11,7 @@ public class Jogo2 {
         Map<String, Capitulo> capitulos = leitor.carregarCapitulos("rsc/Capitulos.txt", personagens, escaneador);
 
         System.out.println("Carregamento finalizado\n\n...\n\n");
-        
+
         Capitulo raiz = capitulos.get("Capitulo001");
         raiz.executar();
 
