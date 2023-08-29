@@ -1,11 +1,10 @@
-CAPITULO
+CAPITULO_COM_IMAGEM
 ID
 Capitulo001
 PERSONAGENS
 Protagonista
 TEXTO
-John 
-é um presidiário da penitenciária de segurança máxima de veridium, onde trabalha na parte de metalúrgica dela,
+John é um presidiário da penitenciária de segurança máxima de veridium, onde trabalha na parte de metalúrgica dela,
 ele está preso por roubo ao banco central da cidade Serenópolis junto com alguns parceiros como Kenny,
 porém por um deslize de  John todos acabaram presos. Mas na noite do dia 28 de outubro de 1995,
 John está pensando se ele deve tentar fugir de uma vez por todas ou continuar ali até a sua sentença ser completa.
@@ -13,6 +12,17 @@ O Que você decide fazer?
 VARIACOES
 0
 0
+IMAGEM
+================================
+||     ||<(.)>||<(.)>||     || 
+||    _||     ||     ||_    || 
+||   (__D     ||     C__)   || 
+||   (__D     ||     C__)   ||
+||   (__D     ||     C__)   ||
+||   (__D     ||     C__)   ||
+||     ||     ||     ||     ||
+================================                                                                                        
+IMAGEM_FIM
 
 CAPITULO
 ID
@@ -40,6 +50,15 @@ John acabou falecendo na prisão.
 VARIACOES
 -10
 +20
+IMAGEM
+ ______ _____ _   _          _        __ 
+|  ____|_   _| \ | |   /\   | |      /_ |
+| |__    | | |  \| |  /  \  | |       | |
+|  __|   | | | . ` | / /\ \ | |       | |
+| |     _| |_| |\  |/ ____ \| |____   | |
+|_|    |_____|_| \_/_/    \_\______|  |_|
+ 
+ IMAGEM_FIM
 
 CAPITULO
 ID
@@ -51,6 +70,24 @@ Kenny pega a faca que estava na mão e esfaqueia John até a morte.
 VARIACOES
 -70
 +80
+IMAGEM
+ ______  _____ ______      ____  _    _ ______          _____   ____  
+|  ____|/ ____|  ____/\   / __ \| |  | |  ____|   /\   |  __ \ / __ \ 
+| |__  | (___ | |__ /  \ | |  | | |  | | |__     /  \  | |  | | |  | |
+|  __|  \___ \|  __/ /\ \| |  | | |  | |  __|   / /\ \ | |  | | |  | |
+| |____ ____) | | / ____ \ |__| | |__| | |____ / ____ \| |__| | |__| |
+ |______|_____/|_|/_/    \_\___\_\\____/|______/_/    \_\_____/ \____/ 
+
+ ______ _____ _   _          _        ___  
+ |  ____|_   _| \ | |   /\   | |      |__ \ 
+ | |__    | | |  \| |  /  \  | |        | |
+ |  __|   | | | . ` | / /\ \ | |        / / 
+ | |     _| |_| |\  |/ ____ \| |____   / /_ 
+ |_|    |_____|_| \_/_/    \_\______| |____|
+                                            
+
+IMAGEM_FIM                                                                                                     
+                                                                                                                          
 
 CAPITULO
 ID
@@ -86,6 +123,15 @@ John recusa o pedido de Phillipy e fracassa na sua fuga da prisão e é detido e
 VARIACOES
 -10
 -17
+IMAGEM
+  ______ _____ _   _          _        ____  
+ |  ____|_   _| \ | |   /\   | |      |___ \ 
+ | |__    | | |  \| |  /  \  | |        __| |
+ |  __|   | | | . ` | / /\ \ | |       |__ < 
+ | |     _| |_| |\  |/ ____ \| |____   ___| |
+ |_|    |_____|_| \_/_/    \_\______| |____/ 
+ 
+ IMAGEM_FIM                                            
 
 CAPITULO
 ID
@@ -98,6 +144,15 @@ E com isso sairam da prisão.
 VARIACOES
 -10
 -17
+IMAGEM
+   _____ _    _  _____ ______  _____ _____  ____  
+  / ____| |  | |/ ____|  ____|/ ____/ ____|/ __ \ 
+ | (___ | |  | | |    | |__  | (___| (___ | |  | |
+  \___ \| |  | | |    |  __|  \___ \\___ \| |  | |
+  ____) | |__| | |____| |____ ____) |___) | |__| |
+ |_____/ \____/ \_____|______|_____/_____/ \____/ 
+                                                  
+IMAGEM_FIM
 
 CAPITULO
 ID
@@ -109,6 +164,15 @@ Na noite do dia 29 ao tentar sair sem a ajuda de outra pessoa, John é pego pelo
 VARIACOES
 -10
 -17
+IMAGEM
+  ______ _____ _   _          _        _  _   
+ |  ____|_   _| \ | |   /\   | |      | || |  
+ | |__    | | |  \| |  /  \  | |      | || |_ 
+ |  __|   | | | . ` | / /\ \ | |      |__   _|
+ | |     _| |_| |\  |/ ____ \| |____     | |  
+ |_|    |_____|_| \_/_/    \_\______|    |_|  
+                                              
+IMAGEM_FIM 
 
 ESCOLHA
 DE

@@ -3,10 +3,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Capitulo {
-  private String texto;
+  protected String texto;
   protected ArrayList<Escolha> escolhas;
-  private Personagem personagem1;
-  private int variacaoEnergiaPersonagem1;
+  protected Personagem personagem;
+  protected int variacaoEnergiaPersonagem;
   protected Scanner escaneador;
 
   protected Capitulo() {
@@ -14,10 +14,10 @@ public class Capitulo {
     this.escolhas = new ArrayList<Escolha>();
   }
 
-  public Capitulo(String texto, Personagem personagem1, int variacaoEnergiaPersonagem1, Scanner escaneador) {
+  public Capitulo(String texto, Personagem personagem, int variacaoEnergiaPersonagem, Scanner escaneador) {
     this.texto = texto;
-    this.personagem1 = personagem1;
-    this.variacaoEnergiaPersonagem1 = variacaoEnergiaPersonagem1;
+    this.personagem = personagem;
+    this.variacaoEnergiaPersonagem = variacaoEnergiaPersonagem;
     this.escaneador = escaneador;
     this.escolhas = new ArrayList<Escolha>();
 
@@ -34,7 +34,7 @@ public class Capitulo {
 
     escaneadorDeArquivo.nextLine();
     String idPersonagem1 = escaneadorDeArquivo.nextLine();
-    this.personagem1 = personagens.get(idPersonagem1);
+    this.personagem = personagens.get(idPersonagem1);
 
     escaneadorDeArquivo.nextLine();
     String linha = escaneadorDeArquivo.nextLine();
@@ -42,14 +42,14 @@ public class Capitulo {
     while (!linha.equals("VARIACOES")) {
 
       if (linha.equals(idPersonagem1)) {
-        texto = texto + personagem1.getNome();
+        texto = texto + personagem.getNome();
       } else {
         texto = texto + linha;
       }
       linha = escaneadorDeArquivo.nextLine();
 
     }
-    this.variacaoEnergiaPersonagem1 = Integer.parseInt(escaneadorDeArquivo.nextLine());
+    this.variacaoEnergiaPersonagem = Integer.parseInt(escaneadorDeArquivo.nextLine());
 
   }
 
@@ -74,7 +74,7 @@ public class Capitulo {
 
 protected void mostrar() {
     System.out.println(texto);
-    personagem1.ajustarEnergia(variacaoEnergiaPersonagem1);
+    personagem.ajustarEnergia(variacaoEnergiaPersonagem);
 
     for (int i = 0; i < escolhas.size(); i++) {
         System.out.println("- " + escolhas.get(i).getTextoMostrado());

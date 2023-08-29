@@ -1,8 +1,4 @@
 Protagonista
-Amartia
+John
 100
-
-Antagonista
-Entidade
-150
 

@@ -59,6 +59,20 @@ public class LeitorDeArquivos {
           {
             capitulos.put(id, new Capitulo(personagens, escaneadorDoConsole, escaneadorDeArquivo));
           } 
+          else if(linha.equals("CAPITULO_COM_IMAGEM")){
+
+            Capitulo capitulo = new Capitulo(personagens, escaneadorDoConsole, escaneadorDeArquivo);
+            String imagem = "";
+            linha = escaneadorDeArquivo.nextLine();
+            linha = escaneadorDeArquivo.nextLine();
+            linha = escaneadorDeArquivo.nextLine();
+            while(!linha.equals("IMAGEM_FIM")){
+              imagem += linha + "\n";
+              linha = escaneadorDeArquivo.nextLine();
+            }
+            CapituloDeImagem capImagem = new CapituloDeImagem(capitulo, imagem);
+            capitulos.put(id, capImagem);
+          }
           else if (linha.equals("ESCOLHA")) 
           
           {
