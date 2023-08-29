@@ -55,22 +55,31 @@ public class LeitorDeArquivos {
           escaneadorDeArquivo.nextLine();
           String id = escaneadorDeArquivo.nextLine();
 
-          if (linha.equals("CAPITULO")) 
-          {
+          if (linha.equals("CAPITULO")) {
             capitulos.put(id, new Capitulo(personagens, escaneadorDoConsole, escaneadorDeArquivo));
-          } 
-          else if (linha.equals("ESCOLHA")) 
-          
+          } else if (linha.equals("ESCOLHA"))
+
           {
             LerEscolha(capitulos, escaneadorDeArquivo);
           }
-
+          
           System.out.println("Capitulo " + id);
           escaneadorDeArquivo.nextLine();
 
         } else if (linha.equals("ESCOLHA")) {
           LerEscolha(capitulos, escaneadorDeArquivo);
 
+        }
+       else if (linha.equals("IMAGEM")){
+          // Fazer um while que vai parar quando ele encontrar a mensagem IMAGEM_FIM
+          String imagem = "";
+          while(!linha.equals("IMAGEM_FIM")){
+            String LinhaImagem = "";
+            LinhaImagem += escaneadorDeArquivo.nextLine();
+            //capitulos.put(id, new Capitulo(personagens, escaneadorDoConsole, escaneadorDeArquivo));
+            
+          }
+          
         }
         linha = escaneadorDeArquivo.nextLine();
       }
